@@ -13,7 +13,7 @@ const LineData = ({ label, value }: { label: string, value: any }) => {
 
 const StatsCard = ({ label, value }: { label: string, value: string | any }) => {
   return (
-    <div className="rounded-lg h-[90%] bg-white p-3 border-1 border-[#c3c6ce] transition ease-out duration-500 overflow-visible hover:border-[#008bf8] hover:shadow-[0_4px_18px_0_rgba(0,0,0,0.25)]">
+    <div className="hover:!bg-blue-100 relative hover:transform hover:-translate-y-2 rounded-lg h-[90%] bg-white p-3 border-1 border-[#c3c6ce] transition ease-out duration-500 overflow-visible hover:border-[#008bf8] hover:shadow-[0_4px_18px_0_rgba(0,0,0,0.25)]">
       <div className="text-black">
         <p className="text-sm text-slate-500  m-0">{label}</p>
       </div>
@@ -48,7 +48,7 @@ const ViewStatics = ({ statistics }: { statistics: StatisticsOverview }) => {
 const CompanyOverview = ({ companyProfile }: { companyProfile: CompanyOverview }) => {
   return (
     <>
-      <div className="rounded-lg bg-white p-3 border-1 border-[#c3c6ce]  transition ease-out duration-500 overflow-visible hover:border-[#008bf8] hover:shadow-[0_4px_18px_0_rgba(0,0,0,0.25)]">
+      <div className="hover:!bg-blue-100 relative hover:transform hover:-translate-y-2 rounded-lg bg-white p-3 border-1 border-[#c3c6ce]  transition ease-out duration-500 overflow-visible hover:border-[#008bf8] hover:shadow-[0_4px_18px_0_rgba(0,0,0,0.25)]">
         <div className="text-black ">
           <p className="text-xl font-bold pb-2 m-0">Company Info</p>
         </div>
@@ -60,7 +60,6 @@ const CompanyOverview = ({ companyProfile }: { companyProfile: CompanyOverview }
 }
 
 const Campaigns = ({ campaigns }: any) => {
-
   const countryCodes: any = {
     236: 'US',
     227: 'TR',
@@ -68,8 +67,9 @@ const Campaigns = ({ campaigns }: any) => {
     234: 'GB',
     0: 'Others'
   }
+
   return (
-    <div className="rounded-lg bg-white p-3 border-1 border-[#c3c6ce]  transition ease-out duration-500 overflow-visible hover:border-[#008bf8] hover:shadow-[0_4px_18px_0_rgba(0,0,0,0.25)]">
+    <div className="hover:!bg-blue-100 relative hover:transform hover:-translate-y-2 rounded-lg bg-white p-3 border-1 border-[#c3c6ce]  transition ease-out duration-500 overflow-visible hover:border-[#008bf8] hover:shadow-[0_4px_18px_0_rgba(0,0,0,0.25)]">
       <div className="text-black">
         <p className="text-xl font-bold pb-2 m-0">Campaigns per country</p>
       </div>
