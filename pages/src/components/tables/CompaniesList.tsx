@@ -26,9 +26,9 @@ export default function CompaniesList() {
             publishedAt,
             duration
           }: any) =>
-            <tr key={ytVideoId} className="text-xs">
+            <tr key={ytVideoId} className="text-xs align-middle">
               <td>
-                <img src={thumbnail} className="rounded-lg h-auto w-1/2" />
+                <img src={thumbnail} className="rounded-full h-12 w-12 object-cover" />
               </td>
               <td className="font-semibold">{title}</td>
               <td className="font-semibold">
