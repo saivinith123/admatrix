@@ -1,6 +1,6 @@
 // src/types/companyData.ts
 
-export interface CompanyData {
+export default interface CompanyData {
     company: {
       companyId: number;
       legalName: string;

@@ -1,4 +1,5 @@
 import { Col, Row } from "reactstrap"
+
 import type { CompanyOverview, StatisticsOverview } from "../types/companyData"
 
 const LineData = ({ label, value }: { label: string, value: any }) => {

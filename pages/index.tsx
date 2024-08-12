@@ -1,11 +1,9 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import '../styles/globals.css';
 
-import CompanyInformation from "./src/components/CompanyInformation";
-import companyData from './src/data/data1.json'
 import CompaniesList from './src/components/tables/CompaniesList';
-import { Container } from 'reactstrap';
+import companyData from './src/data/data1.json'
+import CompanyInformation from "./src/components/CompanyInformation";
 
 export default function Home() {
   return (

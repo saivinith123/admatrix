@@ -1,7 +1,6 @@
-import { Row, Container, Table } from "reactstrap";
+import { Table } from "reactstrap";
 
 import data2 from './../../data/data2.json'
-
 
 export default function CompaniesList() {
   const headers = ['Thubnail', 'Title', 'Brand', 'Toal ad spend', 'As spend 30', 'Publish Date', 'duration']
