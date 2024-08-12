@@ -9,7 +9,7 @@ export default function CompaniesList() {
     <>
       <hr />
       <h4 className="bg-blue-100 p-2 text-center rounded-sm">Companies List</h4>
-      <Table responsive hover >
+      <Table responsive hover>
         <thead>
           <tr >
             {headers?.map((h: string) => <th key={h}>{h}</th>)}
@@ -26,12 +26,12 @@ export default function CompaniesList() {
             publishedAt,
             duration
           }: any) =>
-            <tr key={ytVideoId} className="">
+            <tr key={ytVideoId} className="text-xs">
               <td>
                 <img src={thumbnail} className="rounded-lg h-auto w-1/2" />
               </td>
-              <td className="font-bold">{title}</td>
-              <td className="font-bold">
+              <td className="font-semibold">{title}</td>
+              <td className="font-semibold">
                 <p className="m-0 text-blue-600">{brandName}</p></td>
               <td>{totalSpend}</td>
               <td>{last30Days}</td>
